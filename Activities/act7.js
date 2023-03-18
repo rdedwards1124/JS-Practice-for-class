@@ -52,13 +52,15 @@ async function conductRace(){
 let resultsContainer = document.querySelector('.results-container')
 
 async function conductRace(){
-	await Promise.all([
+	let results = await Promise.all([
     	timeGreenCharacter(),
       	timeRedCharacter()
     ])
-  	if (timeGreenCharacter>timeRedCharacter) {
+  	if (results[0]<results[1]) { // DONT FORGET:
         resultsContainer.textContent = "Green character wins!"
     } else {
         resultsContainer.textContent = "Red character wins!"
     }
 }
+
+// DONT FORGET: results is an array, so the results of timegreencharacter and red is results[0] and results[1]
