@@ -31,7 +31,9 @@ Output:
 This is a paragraph that needs to be removed.
 */
 
-
+let element
+element = document.getElementsByTagName('p')
+element.remove('paragraph')
 
 
 
