@@ -15,7 +15,7 @@ console.log(banana);
 
 // Exercise 6: Creating a Class 
 class TV{
-    constuctor(size, brand) {
+    constructor(size, brand) {
         this.size = size
         this.brand = brand
   }}
